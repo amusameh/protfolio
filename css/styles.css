@@ -1,0 +1,179 @@
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arima Madurai', cursive;
+	font-size: 24px;
+	font-weight: 300;
+	color: rgb(27, 27, 27);
+	line-height: 1.45;
+}
+ h2, h3 {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 4.5rem;
+	margin:30px 0 20px; 
+}
+h3 {
+	font-size: 2rem;
+	margin: 20px 0 10px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.left {
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/ url(../images/book1.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 20%;
+	height: 100vh;
+	position: fixed;
+	float: left;
+}
+
+.left img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/* border: 2px solid black; */
+	padding: 3px;
+	position: absolute;
+	top: 15%;
+	right: -75px;
+	background-color: black;
+}
+
+.left ul {
+	position: absolute;
+	bottom: 10%;
+	right: -30px;
+	width: 80%;
+}
+.left li {
+	background-color: rgba(0, 0, 0, 0.705);
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.left li a {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+	text-decoration: none;
+	pointer-events: none;
+	display: block;
+}
+
+.right {
+	background-image: url(../images/concrete_wall_3.jpg);
+	width: 80%;
+	padding-left: 110px;
+	float: right; 
+}
+
+.container {
+	height: 100vh;
+	padding: 7%;
+}
+
+#about p {
+	text-align: justify;
+}
+
+
+/* ======= The skills section ======== */
+
+.skills .progress {
+	background-color: #777;
+	height: 30px;
+}
+
+.skills .progress span {
+	background-color: #000000cc;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* ======= The Contact section ======== */
+
+.contact .socials li {
+	height: 50px;
+	width: 50px;
+	background: #777;
+	border: 1px solid black;
+	margin: 5px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.contact .socials li img {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contact .socials li .fa {
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	width: 30px;
+}
+
+.hidden {
+	display: none;
+}
+
+.move {
+	transition: ease-in-out 3s;
+}
+
+
