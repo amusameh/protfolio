@@ -61,13 +61,14 @@ ul {
 
 
 .left {
-	background-image: /*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/ url(../images/book1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../images/book1.jpg);
 	background-size: cover;
 	background-position: center;
 	width: 20%;
 	height: 100vh;
 	position: fixed;
 	float: left;
+	border-right: 4px solid black;
 }
 
 .left img {
